@@ -1,0 +1,19 @@
+[project]
+name = "csa-lab4"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Djeno",email = "djeno00@mail.ru"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+]
+
+[tool.poetry]
+packages = [{include = "csa_lab4", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
