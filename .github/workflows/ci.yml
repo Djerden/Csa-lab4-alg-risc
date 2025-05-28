@@ -26,8 +26,8 @@ jobs:
         poetry install
     - name: Lint with ruff
       run: |
-        poetry run python -m ruff translator.py
-        poetry run python -m ruff machine.py
+        poetry run ruff translator.py
+        poetry run ruff machine.py
   test:
     runs-on: ubuntu-latest
     steps:
