@@ -1,0 +1,174 @@
+in_source: |-
+  puts 'Hello, World!';
+in_stdin: |-
+  Good news, everyone!
+out_log: |+
+  INFO    machine:simulation    { INPUT MESSAGE } [ `Good news, everyone!` ]
+  INFO    machine:simulation    { INPUT TOKENS  } [ 71,111,111,100,32,110,101,119,115,44,32,101,118,101,114,121,111,110,101,33 ]
+  INFO    machine:decode        TICK: 1, PC:1, REGISTERS: 'r0':0 'r1':0'r2':0 'r3':0'r4':19, OPCODE: SW
+  INFO    machine:decode        TICK: 6, PC:2, REGISTERS: 'r0':0 'r1':0'r2':0 'r3':0'r4':19, OPCODE: ADD
+  INFO    machine:decode        TICK: 11, PC:3, REGISTERS: 'r0':0 'r1':0'r2':0 'r3':19'r4':19, OPCODE: SUBI
+  INFO    machine:decode        TICK: 16, PC:4, REGISTERS: 'r0':0 'r1':0'r2':0 'r3':19'r4':18, OPCODE: ADDI
+  INFO    machine:decode        TICK: 21, PC:5, REGISTERS: 'r0':0 'r1':72'r2':0 'r3':19'r4':18, OPCODE: SW
+  INFO    machine:decode        TICK: 26, PC:6, REGISTERS: 'r0':0 'r1':72'r2':0 'r3':19'r4':18, OPCODE: SUBI
+  INFO    machine:decode        TICK: 31, PC:7, REGISTERS: 'r0':0 'r1':72'r2':0 'r3':19'r4':17, OPCODE: ADDI
+  INFO    machine:decode        TICK: 36, PC:8, REGISTERS: 'r0':0 'r1':101'r2':0 'r3':19'r4':17, OPCODE: SW
+  INFO    machine:decode        TICK: 41, PC:9, REGISTERS: 'r0':0 'r1':101'r2':0 'r3':19'r4':17, OPCODE: SUBI
+  INFO    machine:decode        TICK: 46, PC:10, REGISTERS: 'r0':0 'r1':101'r2':0 'r3':19'r4':16, OPCODE: ADDI
+  INFO    machine:decode        TICK: 51, PC:11, REGISTERS: 'r0':0 'r1':108'r2':0 'r3':19'r4':16, OPCODE: SW
+  INFO    machine:decode        TICK: 56, PC:12, REGISTERS: 'r0':0 'r1':108'r2':0 'r3':19'r4':16, OPCODE: SUBI
+  INFO    machine:decode        TICK: 61, PC:13, REGISTERS: 'r0':0 'r1':108'r2':0 'r3':19'r4':15, OPCODE: ADDI
+  INFO    machine:decode        TICK: 66, PC:14, REGISTERS: 'r0':0 'r1':108'r2':0 'r3':19'r4':15, OPCODE: SW
+  INFO    machine:decode        TICK: 71, PC:15, REGISTERS: 'r0':0 'r1':108'r2':0 'r3':19'r4':15, OPCODE: SUBI
+  INFO    machine:decode        TICK: 76, PC:16, REGISTERS: 'r0':0 'r1':108'r2':0 'r3':19'r4':14, OPCODE: ADDI
+  INFO    machine:decode        TICK: 81, PC:17, REGISTERS: 'r0':0 'r1':111'r2':0 'r3':19'r4':14, OPCODE: SW
+  INFO    machine:decode        TICK: 86, PC:18, REGISTERS: 'r0':0 'r1':111'r2':0 'r3':19'r4':14, OPCODE: SUBI
+  INFO    machine:decode        TICK: 91, PC:19, REGISTERS: 'r0':0 'r1':111'r2':0 'r3':19'r4':13, OPCODE: ADDI
+  INFO    machine:decode        TICK: 96, PC:20, REGISTERS: 'r0':0 'r1':44'r2':0 'r3':19'r4':13, OPCODE: SW
+  INFO    machine:decode        TICK: 101, PC:21, REGISTERS: 'r0':0 'r1':44'r2':0 'r3':19'r4':13, OPCODE: SUBI
+  INFO    machine:decode        TICK: 106, PC:22, REGISTERS: 'r0':0 'r1':44'r2':0 'r3':19'r4':12, OPCODE: ADDI
+  INFO    machine:decode        TICK: 111, PC:23, REGISTERS: 'r0':0 'r1':32'r2':0 'r3':19'r4':12, OPCODE: SW
+  INFO    machine:decode        TICK: 116, PC:24, REGISTERS: 'r0':0 'r1':32'r2':0 'r3':19'r4':12, OPCODE: SUBI
+  INFO    machine:decode        TICK: 121, PC:25, REGISTERS: 'r0':0 'r1':32'r2':0 'r3':19'r4':11, OPCODE: ADDI
+  INFO    machine:decode        TICK: 126, PC:26, REGISTERS: 'r0':0 'r1':87'r2':0 'r3':19'r4':11, OPCODE: SW
+  INFO    machine:decode        TICK: 131, PC:27, REGISTERS: 'r0':0 'r1':87'r2':0 'r3':19'r4':11, OPCODE: SUBI
+  INFO    machine:decode        TICK: 136, PC:28, REGISTERS: 'r0':0 'r1':87'r2':0 'r3':19'r4':10, OPCODE: ADDI
+  INFO    machine:decode        TICK: 141, PC:29, REGISTERS: 'r0':0 'r1':111'r2':0 'r3':19'r4':10, OPCODE: SW
+  INFO    machine:decode        TICK: 146, PC:30, REGISTERS: 'r0':0 'r1':111'r2':0 'r3':19'r4':10, OPCODE: SUBI
+  INFO    machine:decode        TICK: 151, PC:31, REGISTERS: 'r0':0 'r1':111'r2':0 'r3':19'r4':9, OPCODE: ADDI
+  INFO    machine:decode        TICK: 156, PC:32, REGISTERS: 'r0':0 'r1':114'r2':0 'r3':19'r4':9, OPCODE: SW
+  INFO    machine:decode        TICK: 161, PC:33, REGISTERS: 'r0':0 'r1':114'r2':0 'r3':19'r4':9, OPCODE: SUBI
+  INFO    machine:decode        TICK: 166, PC:34, REGISTERS: 'r0':0 'r1':114'r2':0 'r3':19'r4':8, OPCODE: ADDI
+  INFO    machine:decode        TICK: 171, PC:35, REGISTERS: 'r0':0 'r1':108'r2':0 'r3':19'r4':8, OPCODE: SW
+  INFO    machine:decode        TICK: 176, PC:36, REGISTERS: 'r0':0 'r1':108'r2':0 'r3':19'r4':8, OPCODE: SUBI
+  INFO    machine:decode        TICK: 181, PC:37, REGISTERS: 'r0':0 'r1':108'r2':0 'r3':19'r4':7, OPCODE: ADDI
+  INFO    machine:decode        TICK: 186, PC:38, REGISTERS: 'r0':0 'r1':100'r2':0 'r3':19'r4':7, OPCODE: SW
+  INFO    machine:decode        TICK: 191, PC:39, REGISTERS: 'r0':0 'r1':100'r2':0 'r3':19'r4':7, OPCODE: SUBI
+  INFO    machine:decode        TICK: 196, PC:40, REGISTERS: 'r0':0 'r1':100'r2':0 'r3':19'r4':6, OPCODE: ADDI
+  INFO    machine:decode        TICK: 201, PC:41, REGISTERS: 'r0':0 'r1':33'r2':0 'r3':19'r4':6, OPCODE: SW
+  INFO    machine:decode        TICK: 206, PC:42, REGISTERS: 'r0':0 'r1':33'r2':0 'r3':19'r4':6, OPCODE: SUBI
+  INFO    machine:decode        TICK: 211, PC:43, REGISTERS: 'r0':0 'r1':33'r2':0 'r3':19'r4':5, OPCODE: ADD
+  INFO    machine:decode        TICK: 216, PC:44, REGISTERS: 'r0':0 'r1':33'r2':0 'r3':19'r4':19, OPCODE: SUBI
+  INFO    machine:decode        TICK: 221, PC:45, REGISTERS: 'r0':0 'r1':33'r2':0 'r3':19'r4':18, OPCODE: LW
+  INFO    machine:decode        TICK: 226, PC:46, REGISTERS: 'r0':0 'r1':72'r2':0 'r3':19'r4':18, OPCODE: SW
+  INFO    machine:decode        TICK: 231, PC:47, REGISTERS: 'r0':0 'r1':72'r2':0 'r3':19'r4':18, OPCODE: BEQ
+  INFO    machine:decode        TICK: 236, PC:48, REGISTERS: 'r0':0 'r1':72'r2':0 'r3':19'r4':18, OPCODE: ADDI
+  INFO    machine:decode        TICK: 241, PC:49, REGISTERS: 'r0':0 'r1':72'r2':9998 'r3':19'r4':18, OPCODE: SW
+  INFO    machine:decode        TICK: 246, PC:50, REGISTERS: 'r0':0 'r1':72'r2':9998 'r3':19'r4':18, OPCODE: JMP
+  INFO    machine:decode        TICK: 251, PC:44, REGISTERS: 'r0':0 'r1':72'r2':9998 'r3':19'r4':18, OPCODE: SUBI
+  INFO    machine:decode        TICK: 256, PC:45, REGISTERS: 'r0':0 'r1':72'r2':9998 'r3':19'r4':17, OPCODE: LW
+  INFO    machine:decode        TICK: 261, PC:46, REGISTERS: 'r0':0 'r1':101'r2':9998 'r3':19'r4':17, OPCODE: SW
+  INFO    machine:decode        TICK: 266, PC:47, REGISTERS: 'r0':0 'r1':101'r2':9998 'r3':19'r4':17, OPCODE: BEQ
+  INFO    machine:decode        TICK: 271, PC:48, REGISTERS: 'r0':0 'r1':101'r2':9998 'r3':19'r4':17, OPCODE: ADDI
+  INFO    machine:decode        TICK: 276, PC:49, REGISTERS: 'r0':0 'r1':101'r2':9998 'r3':19'r4':17, OPCODE: SW
+  INFO    machine:decode        TICK: 281, PC:50, REGISTERS: 'r0':0 'r1':101'r2':9998 'r3':19'r4':17, OPCODE: JMP
+  INFO    machine:decode        TICK: 286, PC:44, REGISTERS: 'r0':0 'r1':101'r2':9998 'r3':19'r4':17, OPCODE: SUBI
+  INFO    machine:decode        TICK: 291, PC:45, REGISTERS: 'r0':0 'r1':101'r2':9998 'r3':19'r4':16, OPCODE: LW
+  INFO    machine:decode        TICK: 296, PC:46, REGISTERS: 'r0':0 'r1':108'r2':9998 'r3':19'r4':16, OPCODE: SW
+  INFO    machine:decode        TICK: 301, PC:47, REGISTERS: 'r0':0 'r1':108'r2':9998 'r3':19'r4':16, OPCODE: BEQ
+  INFO    machine:decode        TICK: 306, PC:48, REGISTERS: 'r0':0 'r1':108'r2':9998 'r3':19'r4':16, OPCODE: ADDI
+  INFO    machine:decode        TICK: 311, PC:49, REGISTERS: 'r0':0 'r1':108'r2':9998 'r3':19'r4':16, OPCODE: SW
+  INFO    machine:decode        TICK: 316, PC:50, REGISTERS: 'r0':0 'r1':108'r2':9998 'r3':19'r4':16, OPCODE: JMP
+  INFO    machine:decode        TICK: 321, PC:44, REGISTERS: 'r0':0 'r1':108'r2':9998 'r3':19'r4':16, OPCODE: SUBI
+  INFO    machine:decode        TICK: 326, PC:45, REGISTERS: 'r0':0 'r1':108'r2':9998 'r3':19'r4':15, OPCODE: LW
+  INFO    machine:decode        TICK: 331, PC:46, REGISTERS: 'r0':0 'r1':108'r2':9998 'r3':19'r4':15, OPCODE: SW
+  INFO    machine:decode        TICK: 336, PC:47, REGISTERS: 'r0':0 'r1':108'r2':9998 'r3':19'r4':15, OPCODE: BEQ
+  INFO    machine:decode        TICK: 341, PC:48, REGISTERS: 'r0':0 'r1':108'r2':9998 'r3':19'r4':15, OPCODE: ADDI
+  INFO    machine:decode        TICK: 346, PC:49, REGISTERS: 'r0':0 'r1':108'r2':9998 'r3':19'r4':15, OPCODE: SW
+  INFO    machine:decode        TICK: 351, PC:50, REGISTERS: 'r0':0 'r1':108'r2':9998 'r3':19'r4':15, OPCODE: JMP
+  INFO    machine:decode        TICK: 356, PC:44, REGISTERS: 'r0':0 'r1':108'r2':9998 'r3':19'r4':15, OPCODE: SUBI
+  INFO    machine:decode        TICK: 361, PC:45, REGISTERS: 'r0':0 'r1':108'r2':9998 'r3':19'r4':14, OPCODE: LW
+  INFO    machine:decode        TICK: 366, PC:46, REGISTERS: 'r0':0 'r1':111'r2':9998 'r3':19'r4':14, OPCODE: SW
+  INFO    machine:decode        TICK: 371, PC:47, REGISTERS: 'r0':0 'r1':111'r2':9998 'r3':19'r4':14, OPCODE: BEQ
+  INFO    machine:decode        TICK: 376, PC:48, REGISTERS: 'r0':0 'r1':111'r2':9998 'r3':19'r4':14, OPCODE: ADDI
+  INFO    machine:decode        TICK: 381, PC:49, REGISTERS: 'r0':0 'r1':111'r2':9998 'r3':19'r4':14, OPCODE: SW
+  INFO    machine:decode        TICK: 386, PC:50, REGISTERS: 'r0':0 'r1':111'r2':9998 'r3':19'r4':14, OPCODE: JMP
+  INFO    machine:decode        TICK: 391, PC:44, REGISTERS: 'r0':0 'r1':111'r2':9998 'r3':19'r4':14, OPCODE: SUBI
+  INFO    machine:decode        TICK: 396, PC:45, REGISTERS: 'r0':0 'r1':111'r2':9998 'r3':19'r4':13, OPCODE: LW
+  INFO    machine:decode        TICK: 401, PC:46, REGISTERS: 'r0':0 'r1':44'r2':9998 'r3':19'r4':13, OPCODE: SW
+  INFO    machine:decode        TICK: 406, PC:47, REGISTERS: 'r0':0 'r1':44'r2':9998 'r3':19'r4':13, OPCODE: BEQ
+  INFO    machine:decode        TICK: 411, PC:48, REGISTERS: 'r0':0 'r1':44'r2':9998 'r3':19'r4':13, OPCODE: ADDI
+  INFO    machine:decode        TICK: 416, PC:49, REGISTERS: 'r0':0 'r1':44'r2':9998 'r3':19'r4':13, OPCODE: SW
+  INFO    machine:decode        TICK: 421, PC:50, REGISTERS: 'r0':0 'r1':44'r2':9998 'r3':19'r4':13, OPCODE: JMP
+  INFO    machine:decode        TICK: 426, PC:44, REGISTERS: 'r0':0 'r1':44'r2':9998 'r3':19'r4':13, OPCODE: SUBI
+  INFO    machine:decode        TICK: 431, PC:45, REGISTERS: 'r0':0 'r1':44'r2':9998 'r3':19'r4':12, OPCODE: LW
+  INFO    machine:decode        TICK: 436, PC:46, REGISTERS: 'r0':0 'r1':32'r2':9998 'r3':19'r4':12, OPCODE: SW
+  INFO    machine:decode        TICK: 441, PC:47, REGISTERS: 'r0':0 'r1':32'r2':9998 'r3':19'r4':12, OPCODE: BEQ
+  INFO    machine:decode        TICK: 446, PC:48, REGISTERS: 'r0':0 'r1':32'r2':9998 'r3':19'r4':12, OPCODE: ADDI
+  INFO    machine:decode        TICK: 451, PC:49, REGISTERS: 'r0':0 'r1':32'r2':9998 'r3':19'r4':12, OPCODE: SW
+  INFO    machine:decode        TICK: 456, PC:50, REGISTERS: 'r0':0 'r1':32'r2':9998 'r3':19'r4':12, OPCODE: JMP
+  INFO    machine:decode        TICK: 461, PC:44, REGISTERS: 'r0':0 'r1':32'r2':9998 'r3':19'r4':12, OPCODE: SUBI
+  INFO    machine:decode        TICK: 466, PC:45, REGISTERS: 'r0':0 'r1':32'r2':9998 'r3':19'r4':11, OPCODE: LW
+  INFO    machine:decode        TICK: 471, PC:46, REGISTERS: 'r0':0 'r1':87'r2':9998 'r3':19'r4':11, OPCODE: SW
+  INFO    machine:decode        TICK: 476, PC:47, REGISTERS: 'r0':0 'r1':87'r2':9998 'r3':19'r4':11, OPCODE: BEQ
+  INFO    machine:decode        TICK: 481, PC:48, REGISTERS: 'r0':0 'r1':87'r2':9998 'r3':19'r4':11, OPCODE: ADDI
+  INFO    machine:decode        TICK: 486, PC:49, REGISTERS: 'r0':0 'r1':87'r2':9998 'r3':19'r4':11, OPCODE: SW
+  INFO    machine:decode        TICK: 491, PC:50, REGISTERS: 'r0':0 'r1':87'r2':9998 'r3':19'r4':11, OPCODE: JMP
+  INFO    machine:decode        TICK: 496, PC:44, REGISTERS: 'r0':0 'r1':87'r2':9998 'r3':19'r4':11, OPCODE: SUBI
+  INFO    machine:decode        TICK: 501, PC:45, REGISTERS: 'r0':0 'r1':87'r2':9998 'r3':19'r4':10, OPCODE: LW
+  INFO    machine:decode        TICK: 506, PC:46, REGISTERS: 'r0':0 'r1':111'r2':9998 'r3':19'r4':10, OPCODE: SW
+  INFO    machine:decode        TICK: 511, PC:47, REGISTERS: 'r0':0 'r1':111'r2':9998 'r3':19'r4':10, OPCODE: BEQ
+  INFO    machine:decode        TICK: 516, PC:48, REGISTERS: 'r0':0 'r1':111'r2':9998 'r3':19'r4':10, OPCODE: ADDI
+  INFO    machine:decode        TICK: 521, PC:49, REGISTERS: 'r0':0 'r1':111'r2':9998 'r3':19'r4':10, OPCODE: SW
+  INFO    machine:decode        TICK: 526, PC:50, REGISTERS: 'r0':0 'r1':111'r2':9998 'r3':19'r4':10, OPCODE: JMP
+  INFO    machine:decode        TICK: 531, PC:44, REGISTERS: 'r0':0 'r1':111'r2':9998 'r3':19'r4':10, OPCODE: SUBI
+  INFO    machine:decode        TICK: 536, PC:45, REGISTERS: 'r0':0 'r1':111'r2':9998 'r3':19'r4':9, OPCODE: LW
+  INFO    machine:decode        TICK: 541, PC:46, REGISTERS: 'r0':0 'r1':114'r2':9998 'r3':19'r4':9, OPCODE: SW
+  INFO    machine:decode        TICK: 546, PC:47, REGISTERS: 'r0':0 'r1':114'r2':9998 'r3':19'r4':9, OPCODE: BEQ
+  INFO    machine:decode        TICK: 551, PC:48, REGISTERS: 'r0':0 'r1':114'r2':9998 'r3':19'r4':9, OPCODE: ADDI
+  INFO    machine:decode        TICK: 556, PC:49, REGISTERS: 'r0':0 'r1':114'r2':9998 'r3':19'r4':9, OPCODE: SW
+  INFO    machine:decode        TICK: 561, PC:50, REGISTERS: 'r0':0 'r1':114'r2':9998 'r3':19'r4':9, OPCODE: JMP
+  INFO    machine:decode        TICK: 566, PC:44, REGISTERS: 'r0':0 'r1':114'r2':9998 'r3':19'r4':9, OPCODE: SUBI
+  INFO    machine:decode        TICK: 571, PC:45, REGISTERS: 'r0':0 'r1':114'r2':9998 'r3':19'r4':8, OPCODE: LW
+  INFO    machine:decode        TICK: 576, PC:46, REGISTERS: 'r0':0 'r1':108'r2':9998 'r3':19'r4':8, OPCODE: SW
+  INFO    machine:decode        TICK: 581, PC:47, REGISTERS: 'r0':0 'r1':108'r2':9998 'r3':19'r4':8, OPCODE: BEQ
+  INFO    machine:decode        TICK: 586, PC:48, REGISTERS: 'r0':0 'r1':108'r2':9998 'r3':19'r4':8, OPCODE: ADDI
+  INFO    machine:decode        TICK: 591, PC:49, REGISTERS: 'r0':0 'r1':108'r2':9998 'r3':19'r4':8, OPCODE: SW
+  INFO    machine:decode        TICK: 596, PC:50, REGISTERS: 'r0':0 'r1':108'r2':9998 'r3':19'r4':8, OPCODE: JMP
+  INFO    machine:decode        TICK: 601, PC:44, REGISTERS: 'r0':0 'r1':108'r2':9998 'r3':19'r4':8, OPCODE: SUBI
+  INFO    machine:decode        TICK: 606, PC:45, REGISTERS: 'r0':0 'r1':108'r2':9998 'r3':19'r4':7, OPCODE: LW
+  INFO    machine:decode        TICK: 611, PC:46, REGISTERS: 'r0':0 'r1':100'r2':9998 'r3':19'r4':7, OPCODE: SW
+  INFO    machine:decode        TICK: 616, PC:47, REGISTERS: 'r0':0 'r1':100'r2':9998 'r3':19'r4':7, OPCODE: BEQ
+  INFO    machine:decode        TICK: 621, PC:48, REGISTERS: 'r0':0 'r1':100'r2':9998 'r3':19'r4':7, OPCODE: ADDI
+  INFO    machine:decode        TICK: 626, PC:49, REGISTERS: 'r0':0 'r1':100'r2':9998 'r3':19'r4':7, OPCODE: SW
+  INFO    machine:decode        TICK: 631, PC:50, REGISTERS: 'r0':0 'r1':100'r2':9998 'r3':19'r4':7, OPCODE: JMP
+  INFO    machine:decode        TICK: 636, PC:44, REGISTERS: 'r0':0 'r1':100'r2':9998 'r3':19'r4':7, OPCODE: SUBI
+  INFO    machine:decode        TICK: 641, PC:45, REGISTERS: 'r0':0 'r1':100'r2':9998 'r3':19'r4':6, OPCODE: LW
+  INFO    machine:decode        TICK: 646, PC:46, REGISTERS: 'r0':0 'r1':33'r2':9998 'r3':19'r4':6, OPCODE: SW
+  INFO    machine:decode        TICK: 651, PC:47, REGISTERS: 'r0':0 'r1':33'r2':9998 'r3':19'r4':6, OPCODE: BEQ
+  INFO    machine:decode        TICK: 656, PC:48, REGISTERS: 'r0':0 'r1':33'r2':9998 'r3':19'r4':6, OPCODE: ADDI
+  INFO    machine:decode        TICK: 661, PC:49, REGISTERS: 'r0':0 'r1':33'r2':9998 'r3':19'r4':6, OPCODE: SW
+  INFO    machine:decode        TICK: 666, PC:50, REGISTERS: 'r0':0 'r1':33'r2':9998 'r3':19'r4':6, OPCODE: JMP
+  INFO    machine:decode        TICK: 671, PC:44, REGISTERS: 'r0':0 'r1':33'r2':9998 'r3':19'r4':6, OPCODE: SUBI
+  INFO    machine:decode        TICK: 676, PC:45, REGISTERS: 'r0':0 'r1':33'r2':9998 'r3':19'r4':5, OPCODE: LW
+  INFO    machine:decode        TICK: 681, PC:46, REGISTERS: 'r0':0 'r1':0'r2':9998 'r3':19'r4':5, OPCODE: SW
+  INFO    machine:decode        TICK: 686, PC:47, REGISTERS: 'r0':0 'r1':0'r2':9998 'r3':19'r4':5, OPCODE: BEQ
+  INFO    machine:decode        TICK: 691, PC:51, REGISTERS: 'r0':0 'r1':0'r2':9998 'r3':19'r4':5, OPCODE: ADD
+  INFO    machine:decode        TICK: 696, PC:52, REGISTERS: 'r0':0 'r1':0'r2':9998 'r3':19'r4':19, OPCODE: HALT
+  INFO    machine:simulation    Data memory map is
+  (   19)        [0000010011]  -> [00000000000000000000000000000000] = (         0)
+  (   18)        [0000010010]  -> [00000000000000000000000000000000] = (         0)
+  (   17)        [0000010001]  -> [00000000000000000000000000000000] = (         0)
+  (   16)        [0000010000]  -> [00000000000000000000000000000000] = (         0)
+  (   15)        [0000001111]  -> [00000000000000000000000000000000] = (         0)
+  (   14)        [0000001110]  -> [00000000000000000000000000000000] = (         0)
+  (   13)        [0000001101]  -> [00000000000000000000000000000000] = (         0)
+  (   12)        [0000001100]  -> [00000000000000000000000000000000] = (         0)
+  (   11)        [0000001011]  -> [00000000000000000000000000000000] = (         0)
+  (   10)        [0000001010]  -> [00000000000000000000000000000000] = (         0)
+  (    9)        [0000001001]  -> [00000000000000000000000000000000] = (         0)
+  (    8)        [0000001000]  -> [00000000000000000000000000000000] = (         0)
+  (    7)        [0000000111]  -> [00000000000000000000000000000000] = (         0)
+  (    6)        [0000000110]  -> [00000000000000000000000000000000] = (         0)
+  (    5)        [0000000101]  -> [00000000000000000000000000000000] = (         0)
+  (    4)        [0000000100]  -> [00000000000000000000000000000000] = (         0)
+  (    3)        [0000000011]  -> [00000000000000000000000000000000] = (         0)
+  (    2)        [0000000010]  -> [00000000000000000000000000000000] = (         0)
+  (    1)        [0000000001]  -> [00000000000000000000000000000000] = (         0)
+  (    0)        [0000000000]  -> [00000000000000000000000000000000] = (         0)
+
+out_stdout: |
+  source LoC: 3 code instr: 52
+  ============================================================
+  Output is `Hello, World!`
+  instr_counter: 139 ticks: 696

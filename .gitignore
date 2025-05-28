@@ -1,0 +1,8 @@
+# Python-специфичные кэш-папки
+__pycache__/
+
+# Кэш pytest
+.pytest_cache/
+
+# Кэш ruff (линтера)
+.ruff_cache/
